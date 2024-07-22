@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+/* Common Styles */
+:root {
+    --font-type: 'Inter';
+    --text-color-prim: hsl(0, 0%, 100%);
+    --text-color-sec: hsl(75, 94%, 57%);
+    --bckgrnd-clr-700: hsl(0, 0%, 20%);
+    --bckgrnd-clr-800: hsl(0, 0%, 12%);
+    --bckgrnd-clr-900: hsl(0, 0%, 8%);
+    --font-size-50: 12px;
+    --font-size-100: 14px;
+    --font-size-200: 24px;
+    --font-weight-100: 400;
+    --font-weight-200: 600;
+    --font-weight-300: 700;
+    --brdr-rad-100: 5px;
+    --brdr-rad-200: 10px;
+    --brdr-rad-300: 50%;
+    --spacing-100: 6px;
+    --spacing-200: 12px;
+    --spacing-300: 24px;
+    --spacing-400: 30px
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    background-color: var(--bckgrnd-clr-900);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--font-type);
+}
+
+/* Main Container */
+.socials-container {
+    margin: auto;
+    width: 290px;
+    background-color: var(--bckgrnd-clr-800);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: var(--brdr-rad-200);
+    padding: var(--spacing-300);
+}
+
+/* Image container and image */
+.img-container {
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    padding-bottom: var(--spacing-300);
+}
+
+.prof-img {
+    border-radius: var(--brdr-rad-300);
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+/* Header stuff */
+.name {
+    font-size: var(--font-size-200);
+    color: var(--text-color-prim);
+    font-weight: var(--font-weight-200);
+    text-align: center;
+}
+
+.location {
+    font-size: var(--font-size-100);
+    font-weight: var(--font-weight-200);
+    color: var(--text-color-sec);
+    text-align: center;
+    padding: var(--spacing-100) 0;
+}
+
+.txt {
+    font-size: var(--font-size-100);
+    font-weight: var(--font-weight-100);
+    color: var(--text-color-prim);
+    text-align: center;
+    padding: var(--spacing-300) 0;
+}
+
+/* Links */
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-200);
+    justify-content: center;
+}
+
+.btn {
+    font-family: var(--font-type);
+    width: 100%;
+    border: none;
+    background-color: var(--bckgrnd-clr-700);
+    border-radius: var(--brdr-rad-100);
+    text-align: center;
+    font-size: var(--font-size-100);
+    font-weight: var(--font-weight-200);
+    color: var(--text-color-prim);
+    padding-top: var(--spacing-200);
+    padding-bottom: var(--spacing-200);
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: var(--text-color-sec);
+    color: var(--bckgrnd-clr-700);
+    cursor: pointer;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-bottom: var(--spacing-100);
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
